@@ -98,7 +98,15 @@ How to use the support mode is described in :
 
 # PreTrained Models
 
-We provide some checkpoints of our model and you can download them [here](https://drive.google.com/drive/folders/103Shcs7Gh5LKoz2smJXVt85ok1m_e2mL?usp=sharing). Now, they are still in preparing.
+We provide some checkpoints of our model and you can download them [here](https://drive.google.com/drive/folders/1nrX6FiULN04PomW2eVaWwNDmM3Hhka0Y?usp=sharing). 
+
+Including MambaJSCC trained with DIV2K under Rayleigh fading channel, CSI-ReST as channel adaptation.
+Train for:
+- PSNR
+- MS-SSIM
+- LPIPS
+
+
 
 
 
