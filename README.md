@@ -32,7 +32,7 @@ This is the official deployment of the paper "MambaJSCC: Adaptive Deep Joint Sou
 
 # Getting start
 
-	The [main.py]() file contain the main experiments of our paper. 
+	The main.py() file contain the main experiments of our paper. 
 	
 	For the first step, you should change the path in the [main.py]() file according to your environment.
 	
