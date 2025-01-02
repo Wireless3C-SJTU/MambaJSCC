@@ -26,7 +26,7 @@ This is the official deployment of the paper "MambaJSCC: Adaptive Deep Joint Sou
 </p>
 
 <p align="center">
-  <img src="./figs/structure.png" alt="System Structure" width="95%">
+  <img src="./figs/CSI-ReST-V-S6.png" alt="System Structure" width="95%">
 </p>
 
 
