@@ -85,7 +85,7 @@ We provide the main experimental setup in the `configs`, including:
 - PSNR, MS-SSIM, LPIPS
 - AWGN and Rayleigh fading channel
 - CSI-ReST, Channel ModNet, no-CSI
-- two GSSM and four GSSM as they in VMamba
+- Two GSSM and four GSSM as they in VMamba
 - CelebA, DIV2K, AFHQ for training in resolution of 128, 256 and 512
 - Kodak, CLIC2021, CIFAR10 for evaluation in resolution of 128
 
@@ -100,7 +100,7 @@ How to use the support mode is described in :
 
 We provide some checkpoints of our model and you can download them [here](https://drive.google.com/drive/folders/1nrX6FiULN04PomW2eVaWwNDmM3Hhka0Y?usp=sharing). 
 
-Including MambaJSCC trained with DIV2K under Rayleigh fading channel, CSI-ReST as channel adaptation.
+Including MambaJSCC trained with DIV2K under Rayleigh fading channel, CSI-ReST as channel adaptation method.
 
 Train for:
 - PSNR
