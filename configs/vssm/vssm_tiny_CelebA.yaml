@@ -1,0 +1,14 @@
+MODEL:
+  TYPE: vssm
+  NAME: vssm_tiny
+  DROP_PATH_RATE: 0.2
+  VSSM:
+    EMBED_DIM: [128,192,256,320]
+    DEPTHS: [ 2, 2, 6, 2]
+    SCAN: 'cross'
+    PE: 'no' 
+    SCAN_NUMBER: 2
+    Extent: 'MLP' 
+    
+    channel_input: 'conv'
+    OUT_CHANS: 80

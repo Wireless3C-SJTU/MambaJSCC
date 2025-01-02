@@ -1,0 +1,25 @@
+
+# this config only for evaluating on Kodak dataset, before evaluation, we crop the image to 128*128 and save them in and folder
+
+TRAIN:
+  EPOCHS: 20
+  SAVE_FRE: 1
+  LOSS: 'PSNR'
+  EVAL_MATRIX: 'PSNR'
+  ENCODER_PATH: '/mnt/sda/wt/MambaJSCCcheckpoints/DIV2K/encoder' 
+  DECODER_PATH: '/mnt/sda/wt/MambaJSCCcheckpoints/DIV2K/decoder'
+  GAN_LOSS: False
+  DATA_PARALLEL: False
+DATA:
+  DATASET: "Kodak"
+  TRAIN_BATCH: 5
+  TEST_BATCH: 1
+  IMG_SIZE: 256
+  train_data_dir: "/mnt/sda/datasets/Kodak128/"
+  test_data_dir:  "/mnt/sda/datasets/Kodak128/"
+CHANNEL:
+  TYPE: 'awgn'
+  SNR :  [10] # [1,3,5,7,9,11,13,15,17,20]
+  ADAPTIVE: 'no'
+
+
