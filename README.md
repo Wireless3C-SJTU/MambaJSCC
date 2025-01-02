@@ -10,7 +10,7 @@ Wenjun Zhang<sup>1</sup>, Fellow, IEEE, and Ping Zhang<sup>2,3</sup>, Fellow, IE
 
 2.   Laboratory of Networking and Switching Technology, Beijing University of Posts and Telecommunications 
 
-3.   the Department of Broadband Communication, Peng Cheng Laboratory  
+3.	 Department of Broadband Communication, Peng Cheng Laboratory  
 
 
 Paper : https://arxiv.org/abs/2409.16592
