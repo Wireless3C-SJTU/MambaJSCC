@@ -29,17 +29,78 @@ This is the official deployment of the paper "MambaJSCC: Adaptive Deep Joint Sou
   <img src="./figs/CSI-ReST-V-S6.png" alt="System Structure" width="95%">
 </p>
 
-# Getting start
+# Installation
 
-	The main.py() file contain the main experiments of our paper. 
+- Install the requirements
+
+  ```
+  pip install -r requirements.txt
+  ```
+  
+- Install the **adaptive_selective_scan CUDA core** for the channel adaptation: 'ssm', standing for the CSI-ReST method
+
+   ```
+   cd ./adaptive_selective_scan
+   rm -r dist/ build/; pip install .
+   pytest test_selective_scan.py # expected all pass
+   ```
+
+   
+
+- [Option] Install the **selective_scan CUDA core** for the channel adaptation: 'attn' and 'no'. The CUDA core is prepared for ablation.
+
+   ```
+   cd ./selective_scan
+   rm -r dist/ build/; pip install .
+   pytest test_selective_scan.py # expected all pass
+   ```
+   
+- Other requirements:
+  
+  - Linux
+  - NVIDIA GPU
+  - Pytorch 1.12+
+  - CUDA 11.6+
+
+# Quick start
+
+The [main.py](./main.py) file contain the main experiments of our paper. 
 	
-	For the first step, you should change the path in the [main.py]() file according to your environment.
-	
-	We provide some checkpoints of our model and you can download them [here](https://drive.google.com/drive/folders/103Shcs7Gh5LKoz2smJXVt85ok1m_e2mL?usp=sharing).
-	
-	After download the checkpoints, you can directly run the [main.py]() file to evaluate the performance of the JSCC system and the joint JSCC and CDDM system at an SNR of 10 dB under the AWGN channel.
-	
-	The code about training has been annotated, but the related code has been contained in the project, you can run the function directly.
+For the first step, you should change the `config_path` in the [main.py]() file according to your environment.
+
+Second, you are required to change the paths of checkpoints and datasets according to your environment.
+
+in the [vssm_tiny_DIV2K.yaml](./configs/train/vssm_tiny_DIV2K.yaml) and [vssm_tiny_DIV2K.yaml](./configs/vssm/vssm_tiny_DIV2K.yaml).
+
+
+
+Simply push the bottom `run` and you can train your own model and evaluate the performance in PSNR.
+
+We fixed the random seed and try to ensure the ensure you to get the same performance. 
+
+
+
+# Further Usage
+
+We provide the main experimental setup in the `configs`, including:
+
+- PSNR, MS-SSIM, LPIPS
+- AWGN and Rayleigh fading channel
+- CSI-ReST, Channel ModNet, no-CSI
+- two GSSM and four GSSM as they in VMamba
+- CelebA, DIV2K, AFHQ for training in resolution of 128, 256 and 512
+- Kodak, CLIC2021, CIFAR10 for evaluation in resolution of 128
+
+How to use the support mode is described in : 
+[vssm_tiny_DIV2K.yaml](./configs/train/vssm_tiny_DIV2K.yaml) and [vssm_tiny_DIV2K.yaml](./configs/vssm/vssm_tiny_DIV2K.yaml)
+
+
+
+
+
+# PreTrained Models
+
+We provide some checkpoints of our model and you can download them [here](https://drive.google.com/drive/folders/103Shcs7Gh5LKoz2smJXVt85ok1m_e2mL?usp=sharing). Now, they are still in preparing.
 
 
 
