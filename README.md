@@ -101,6 +101,7 @@ How to use the support mode is described in :
 We provide some checkpoints of our model and you can download them [here](https://drive.google.com/drive/folders/1nrX6FiULN04PomW2eVaWwNDmM3Hhka0Y?usp=sharing). 
 
 Including MambaJSCC trained with DIV2K under Rayleigh fading channel, CSI-ReST as channel adaptation.
+
 Train for:
 - PSNR
 - MS-SSIM
