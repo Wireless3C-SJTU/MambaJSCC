@@ -19,11 +19,16 @@ Paper : https://arxiv.org/abs/2409.16592
 
 # Overview
 
-This is the official deployment of the paper "CDDM : Channel Denoising Diffusion Models for Semantic Communications"
+This is the official deployment of the paper "MambaJSCC: Adaptive Deep Joint Source-Channel Coding with Generalized State Space Model"
 
 <p align="center">
-  <img src="CDDM_system.png" alt="System Model" width="95%">
+  <img src="./figs/structure.png" alt="System Structure" width="95%">
 </p>
+
+<p align="center">
+  <img src="./figs/structure.png" alt="System Structure" width="95%">
+</p>
+
 
 # Getting start
 
