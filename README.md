@@ -29,7 +29,6 @@ This is the official deployment of the paper "MambaJSCC: Adaptive Deep Joint Sou
   <img src="./figs/CSI-ReST-V-S6.png" alt="System Structure" width="95%">
 </p>
 
-
 # Getting start
 
 	The main.py() file contain the main experiments of our paper. 
