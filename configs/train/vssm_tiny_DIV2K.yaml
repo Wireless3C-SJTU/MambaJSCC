@@ -2,8 +2,8 @@
 TRAIN:
   EPOCHS: 1000
   SAVE_FRE: 100
-  LOSS: 'PSNR' 
-  EVAL_MATRIX: 'PSNR'
+  LOSS: 'PSNR'  ## PSNR, MS-SSIM, LPIPS
+  EVAL_MATRIX: 'PSNR' ## PSNR, MS-SSIM, LPIPS
   ENCODER_PATH: '/mnt/sda/wt/MambaJSCCcheckpoints/DIV2K/encoder'    ## change here to your own path for saving checkpoints
   DECODER_PATH: '/mnt/sda/wt/MambaJSCCcheckpoints/DIV2K/decoder'    ## change here to your own path for saving checkpoints
   GAN_LOSS: False
