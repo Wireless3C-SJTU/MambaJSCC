@@ -65,16 +65,14 @@ This is the official deployment of the paper "MambaJSCC: Adaptive Deep Joint Sou
 # Quick start
 
 The [main.py](./main.py) file contain the main experiments of our paper. 
+
+**Before running**, you are required to do:
 	
-For the first step, you should change the `config_path` in the [main.py]() file according to your environment.
+- change the `config_path` in the [main.py]() file according to your environment.
 
-Second, you are required to change the paths of checkpoints and datasets according to your environment.
+- change the paths of checkpoints and datasets according to your environment in the [vssm_tiny_DIV2K.yaml](./configs/train/vssm_tiny_DIV2K.yaml) and [vssm_tiny_DIV2K.yaml](./configs/vssm/vssm_tiny_DIV2K.yaml).
 
-in the [vssm_tiny_DIV2K.yaml](./configs/train/vssm_tiny_DIV2K.yaml) and [vssm_tiny_DIV2K.yaml](./configs/vssm/vssm_tiny_DIV2K.yaml).
-
-
-
-Simply push the bottom `run` and you can train your own model and evaluate the performance in PSNR.
+**Now,** simply `run` the file [main.py](./main.py) and you can train your own model and evaluate the performance in PSNR.
 
 We fixed the random seed and try to ensure the ensure you to get the same performance. 
 
