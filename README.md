@@ -3,8 +3,8 @@
 <h3>MambaJSCC: Adaptive Deep Joint Source-Channel Coding with Generalized State Space Model</h3>
 
 
-Tong Wu, Zhiyong Chen, Meixia Tao, Fellow, IEEE, Yaping Sun, Xiaodong Xu,
-Wenjun Zhang, Fellow, IEEE, and Ping Zhang, Fellow, IEEE  
+Tong Wu^1, Zhiyong Chen^1, Meixia Tao^1, Fellow, IEEE, Yaping Sun^3, Xiaodong Xu^{2,3},
+Wenjun Zhang^1, Fellow, IEEE, and Ping Zhang^{2,3}, Fellow, IEEE  
 
 [1] Cooperative Medianet Innovation Center (CMIC),Shanghai Jiao Tong University, Shanghai Key Laboratory of Digital Media Processing and Transmission
 
