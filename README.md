@@ -6,12 +6,11 @@
 Tong Wu<sup>1</sup>, Zhiyong Chen<sup>1</sup>, Meixia Tao<sup>1</sup>, Fellow, IEEE, Yaping Sun<sup>3</sup>, Xiaodong Xu<sup>2,3</sup>,
 Wenjun Zhang<sup>1</sup>, Fellow, IEEE, and Ping Zhang<sup>2,3</sup>, Fellow, IEEE  
 
-[1] Cooperative Medianet Innovation Center (CMIC),Shanghai Jiao Tong University, Shanghai Key Laboratory of Digital Media Processing and Transmission
+1. Cooperative Medianet Innovation Center (CMIC),Shanghai Jiao Tong University, Shanghai Key Laboratory of Digital Media Processing and Transmission
 
-[2]   Laboratory of Networking and Switching Technology, Beijing University of Posts and Telecommunications 
+2.   Laboratory of Networking and Switching Technology, Beijing University of Posts and Telecommunications 
 
-[3]   the Department of Broadband
-Communication, Peng Cheng Laboratory  
+3.   the Department of Broadband Communication, Peng Cheng Laboratory  
 
 
 Paper : https://arxiv.org/abs/2409.16592
