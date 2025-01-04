@@ -49,8 +49,8 @@ void set_ssm_params_fwd(SSMParamsBase &params,
                         const size_t dstate,
                         const size_t n_groups,
                         const size_t n_chunks,
-                        // snr
-                        float snr,
+                        
+                        
                         // device pointers
                         const at::Tensor u,
                         const at::Tensor delta,
@@ -74,7 +74,6 @@ void set_ssm_params_fwd(SSMParamsBase &params,
     params.n_chunks = n_chunks;
     params.dim_ngroups_ratio = dim / n_groups;
 
-    params.snr = snr;
 
     params.delta_softplus = delta_softplus;
 
@@ -173,7 +172,7 @@ selective_scan_fwd(const at::Tensor &u, const at::Tensor &delta,
                   const c10::optional<at::Tensor> &delta_bias_,
                   bool delta_softplus,
                   int nrows,
-                  float snr
+                  
                   ) {
     auto input_type = u.scalar_type();
     auto weight_type = A.scalar_type();
@@ -230,12 +229,12 @@ selective_scan_fwd(const at::Tensor &u, const at::Tensor &delta,
     const int n_chunks = (seqlen + 2048 - 1) / 2048; // max is 128 * 16 = 2048 in fwd_kernel
     at::Tensor out = torch::empty_like(delta);
     // at::Tensor x;
-    //at::x = torch::ones({batch_size, dim, n_chunks, dstate * 2}, u.options().dtype(weight_type))*snr; // 就是在这里了
-    at::Tensor x = torch::empty({batch_size, dim, n_chunks, dstate * 2}, u.options().dtype(weight_type)); // 就是在这里了
+
+    at::Tensor x = torch::empty({batch_size, dim, n_chunks, dstate * 2}, u.options().dtype(weight_type)); 
 
     
     SSMParamsBase params;
-    set_ssm_params_fwd(params, batch_size, dim, seqlen, dstate, n_groups, n_chunks, snr,
+    set_ssm_params_fwd(params, batch_size, dim, seqlen, dstate, n_groups, n_chunks,
                        u, delta, A, B, C, out,
                        D_.has_value() ? D_.value().data_ptr() : nullptr,
                        delta_bias_.has_value() ? delta_bias_.value().data_ptr() : nullptr,

@@ -29,7 +29,7 @@ struct SSMParamsBase {
     int batch, dim, seqlen, dstate, n_groups, n_chunks;
     int dim_ngroups_ratio;
 
-    float snr;
+    
 
     bool delta_softplus;
 

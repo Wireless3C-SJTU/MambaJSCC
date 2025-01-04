@@ -91,7 +91,7 @@ void selective_scan_fwd_kernel(SSMParamsBase params) {
     input_t *Cvar = reinterpret_cast<input_t *>(params.C_ptr) + batch_id * params.C_batch_stride + group_id * params.C_group_stride;
     scan_t *x = reinterpret_cast<scan_t *>(params.x_ptr) + (batch_id * params.dim + dim_id * kNRows) * params.n_chunks * params.dstate;
 
-    scan_t snr = {params.snr, params.snr};
+  
 
     float D_val[kNRows] = {0};
     if (params.D_ptr != nullptr) {
