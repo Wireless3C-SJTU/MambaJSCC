@@ -1,0 +1,21 @@
+
+TRAIN:
+  EPOCHS: 20
+  SAVE_FRE: 1
+  LOSS: 'PSNR' 
+  EVAL_MATRIX: 'PSNR'
+  ENCODER_PATH: '/mnt/sda/wt/MambaJSCCcheckpoints/OpenImg/encoder'  
+  DECODER_PATH: '/mnt/sda/wt/MambaJSCCcheckpoints/OpenImg/decoder'
+  GAN_LOSS: False
+DATA:
+  DATASET: "OpenImg"
+  TRAIN_BATCH: 10
+  TEST_BATCH: 1
+  IMG_SIZE: 256
+  train_data_dir: "/mnt/sda/datasets/OpenImg/selected/selected"
+  test_data_dir:  "/mnt/sda/datasets/Kodak/"
+CHANNEL:
+  TYPE: 'awgn'
+  SNR : [10] 
+  ADAPTIVE: 'no'  ## here ssm for train with CSI-ReST, attn for train with Channel ModNet, no for train without channel adaptation
+

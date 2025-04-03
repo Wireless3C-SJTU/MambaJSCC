@@ -5,7 +5,7 @@ MODEL:
   VSSM:
     EMBED_DIM: [128,192,256,320] 
     DEPTHS: [2, 2, 6, 2]
-    OUT_CHANS: 32
+    OUT_CHANS: 115
     SCAN: 'cross'
     PE: 'no' 
     SCAN_NUMBER: 2

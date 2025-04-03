@@ -3,12 +3,11 @@ MODEL:
   NAME: vssm_tiny
   DROP_PATH_RATE: 0.2
   VSSM:
-    EMBED_DIM: [128,192,256,320] 
-    DEPTHS: [2, 2, 6, 2]
+    EMBED_DIM: [128,192,256,320]
+    DEPTHS: [ 2, 2, 6, 2]
     OUT_CHANS: 115
     SCAN: 'cross'
     PE: 'no' 
-    SCAN_NUMBER: 2
+    SCAN_NUMBER: 2  # 2 for our MambaJSCC, 4 for the cross scan in VMamba
     Extent: 'MLP' 
-    
     channel_input: 'conv' 
