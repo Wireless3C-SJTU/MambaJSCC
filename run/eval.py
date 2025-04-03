@@ -14,7 +14,7 @@ from utils.utils import *
 from utils.distortion import *
 import time
 
-
+@torch.no_grad()
 def eval_MambaJSCC(config):
     _, test_loader = get_loader(config)
 
