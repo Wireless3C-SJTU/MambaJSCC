@@ -106,6 +106,7 @@ Train for:
 - PSNR
 - MS-SSIM
 - LPIPS
+- Kodak and CLIC2021
 
 
 
