@@ -108,8 +108,23 @@ Train for:
 - Kodak and CLIC2021
 
 
+# P.S
+Actually, our MambaJSCC contain two cuda core, named "adaptive_selective_scan_cuda_core" and "selective_scan_cuda_core", the former is for channel adaptive with "ssm" and the other is for "attn" and "no".
 
+so if you want to equip the whole function of MambaJSCC, please prepare you environment with the option operation.
 
+# Fix Bug
+1. We change the eval.py with "torch.load(encoder_path, weight_only=False)" because of the change of Pytorch in 2.6 version.
+2. We change the vmamba.py to ensure you can run our code with the only installation of "adaptive_selective_scan_cuda_core" as. 
+
+'''
+try:  ## successfully try
+    "sscore acts the same as mamba_ssm"
+    SSMODE = "sscore"
+    # import selective_scan_cuda_core
+    import adaptive_selective_scan_cuda_core
+'''
+3. we simplify the requirements.txt file for easy install.
 
 # Citation
 
