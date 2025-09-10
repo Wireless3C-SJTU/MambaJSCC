@@ -117,13 +117,13 @@ so if you want to equip the whole function of MambaJSCC, please prepare you envi
 1. We change the eval.py with "torch.load(encoder_path, weight_only=False)" because of the change of Pytorch in 2.6 version.
 2. We change the vmamba.py to ensure you can run our code with the only installation of "adaptive_selective_scan_cuda_core" as. 
 
-'''
+```
 try:  ## successfully try
     "sscore acts the same as mamba_ssm"
     SSMODE = "sscore"
     # import selective_scan_cuda_core
     import adaptive_selective_scan_cuda_core
-'''
+```
 3. we simplify the requirements.txt file for easy install.
 
 # Citation
