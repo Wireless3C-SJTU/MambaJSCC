@@ -42,7 +42,6 @@ This is the official deployment of the paper "MambaJSCC: Adaptive Deep Joint Sou
    ```
    cd ./adaptive_selective_scan
    rm -r dist/ build/; pip install .
-   pytest test_selective_scan.py # expected all pass
    ```
 
    
